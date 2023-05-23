@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fffd63df46958f2d54c31ef497abc85",
+    "content-hash": "248c559efaa047887b36f6cc94bdc2d2",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -1317,16 +1317,16 @@
         },
         {
             "name": "easycorp/easyadmin-bundle",
-            "version": "v4.6.5",
+            "version": "dev-slim",
             "source": {
                 "type": "git",
-                "url": "https://github.com/EasyCorp/EasyAdminBundle.git",
-                "reference": "3cdf4c2767e16d101cad33b32223052c1fe512a8"
+                "url": "https://github.com/slim/EasyAdminBundle.git",
+                "reference": "ede92844638071b9c957fe1cb8a83024b9fd4731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EasyCorp/EasyAdminBundle/zipball/3cdf4c2767e16d101cad33b32223052c1fe512a8",
-                "reference": "3cdf4c2767e16d101cad33b32223052c1fe512a8",
+                "url": "https://api.github.com/repos/slim/EasyAdminBundle/zipball/ede92844638071b9c957fe1cb8a83024b9fd4731",
+                "reference": "ede92844638071b9c957fe1cb8a83024b9fd4731",
                 "shasum": ""
             },
             "require": {
@@ -1368,6 +1368,9 @@
                 "symfony/dom-crawler": "^5.4|^6.0",
                 "symfony/phpunit-bridge": "^5.4|^6.0"
             },
+            "suggest": {
+                "symfony/mercure": "^0.6.3"
+            },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1379,7 +1382,12 @@
                     "EasyCorp\\Bundle\\EasyAdminBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "EasyCorp\\Bundle\\EasyAdminBundle\\Tests\\TestApplication\\": "tests/TestApplication/src/",
+                    "EasyCorp\\Bundle\\EasyAdminBundle\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1397,16 +1405,15 @@
                 "generator"
             ],
             "support": {
-                "issues": "https://github.com/EasyCorp/EasyAdminBundle/issues",
-                "source": "https://github.com/EasyCorp/EasyAdminBundle/tree/v4.6.5"
+                "source": "https://github.com/slim/EasyAdminBundle/tree/slim"
             },
             "funding": [
                 {
-                    "url": "https://github.com/javiereguiluz",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/javiereguiluz"
                 }
             ],
-            "time": "2023-05-04T18:22:06+00:00"
+            "time": "2023-05-23T17:47:33+00:00"
         },
         {
             "name": "psr/cache",
@@ -5904,7 +5911,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "easycorp/easyadmin-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

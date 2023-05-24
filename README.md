@@ -6,8 +6,8 @@ This project is a demo showcasing the integration of [Mercure protocol][1] into 
 Features
 --------
 
-    * While I edit an entity which gets updated on the server by another user, I get a notification and a button for updating the page I'm looking at
-    * While I am looking at an entity list, if a an entity on the page gets updated on the server by another user, I get a notification, a button for updating the page I'm looking at and the outdated entity gets highlighted
+  * While I edit an entity which gets updated on the server by another user, I get a notification and a button for updating the page I'm looking at
+  * While I am looking at an entity list, if a an entity on the page gets updated on the server by another user, I get a notification, a button for updating the page I'm looking at and the outdated entity gets highlighted
 
 
 Requirements
